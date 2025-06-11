@@ -4,7 +4,7 @@ This guide provides a comprehensive walkthrough to integrate a YOLOv8 model (`be
 
 ---
 
-## 📋 Prerequisites
+📋 Prerequisites
 
 | Component             | Version/Requirement         |
 |-----------------------|-----------------------------|
@@ -15,7 +15,7 @@ This guide provides a comprehensive walkthrough to integrate a YOLOv8 model (`be
 | Triton Inference Server | Latest (from official repo) |
 | OS                    | Ubuntu 22.04 (Recommended)  |
 
-## 🚀 Installation & Setup
+🚀 Installation & Setup
 
 ### 1️⃣ Clone Repositories and Export YOLOv8 to ONNX
 
@@ -37,18 +37,18 @@ deepstream-app -c config.txt
 
 
 4️⃣ Run with GStreamer (Optional)
-## Run GStreamer pipeline script
+### Run GStreamer pipeline script
 bash gst.sh
 
 
 5️⃣ (Optional) Triton Inference Server
-## Clone Triton Inference Server repository
+### Clone Triton Inference Server repository
 git clone https://github.com/triton-inference-server/server.git
 
-## Enter the server directory
+### Enter the server directory
 cd server
 
-## Build Triton with GPU, logging, and metrics enabled
+### Build Triton with GPU, logging, and metrics enabled
 ./build.py -v --enable-gpu --enable-logging --enable-metrics
 
 
