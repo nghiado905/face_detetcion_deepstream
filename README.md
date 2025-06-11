@@ -15,17 +15,9 @@ This guide provides a comprehensive walkthrough to integrate a YOLOv8 model (`be
 | Triton Inference Server | Latest (from official repo) |
 | OS                    | Ubuntu 22.04 (Recommended)  |
 
-### Required Dependencies:
-- `ultralytics`
-- `git`, `make`, `g++`
-- [DeepStream-Yolo](https://github.com/marcoslucianops/DeepStream-Yolo)
-
----
-
 ## 🚀 Installation & Setup
 
 ### 1️⃣ Clone Repositories and Export YOLOv8 to ONNX
-
 
 git clone https://github.com/marcoslucianops/DeepStream-Yolo.git
 git clone https://github.com/ultralytics/ultralytics.git
@@ -68,17 +60,5 @@ cd server
 
 🔗 NVIDIA DeepStream Documentation
 
-
-📦 Output Files Structure
-├── ultralytics/
-├── DeepStream-Yolo/
-├── config_infer_primary_V8.txtgst.sh
-└── deepstream_config.txt
-└── labels.txt
-└── libnvdsinfer_custom_impl_Yolo.so
-└── model_b1_gpu0_fp32.engine
-└── best.pt
-└── best.pt.onnx
-└── best.pt.onnx
 
 
