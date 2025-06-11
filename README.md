@@ -33,21 +33,27 @@ python3 export_yoloV8.py -w best.pt
 
 2️⃣ Build Custom YOLO Inference Plugin
 
+```bash
 # Set CUDA version environment variable
 export CUDA_VER=12.6
 
 # Compile the custom DeepStream YOLO plugin
 make -C DeepStream-Yolo/nvdsinfer_custom_impl_Yolo
+```
 
 3️⃣ Run with DeepStream
+``` bash
 # Run the DeepStream pipeline using your config file
 deepstream-app -c config.txt
-
+``` 
 4️⃣ Run with GStreamer (Optional)
+``` bash
 # Run GStreamer pipeline script
 bash gst.sh
+``` 
 
 5️⃣ (Optional) Triton Inference Server Setup
+``` bash
 # Clone Triton Inference Server repository
 git clone https://github.com/triton-inference-server/server.git
 
@@ -56,7 +62,7 @@ cd server
 
 # Build Triton with GPU, logging, and metrics enabled
 ./build.py -v --enable-gpu --enable-logging --enable-metrics
-
+```
 
 📚 References
 
